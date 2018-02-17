@@ -58,9 +58,7 @@ contrabass = \relative c {
   \tuplet 3/2 {<g b>8<g b>8<g b>8} <g b>4 \tuplet 3/2 {<g b>8<g b>8<g b>8} <g b>4 |%m24
   \tuplet 3/2 {<g b>8<g b>8<g b>8} <g b>4 \tuplet 3/2 {<g b>8<g b>8<g b>8} <g b>4\bar "|." |%m25
 }
-vkjdfagbvaklbklvafefbadbfa
-bfabfeabfeaknbkflab
- fadba
+
 violinPart = \new Staff \with {
   instrumentName = ""
   midiInstrument = "violin"
