@@ -14,8 +14,22 @@ global = {
 
 violin = \relative c'' {
   \global
-  
-  
+  f,16 d'8. r4 f,16 d'8. r4 f,16 bes d8 |%m1
+  f,16 d'8. r4 f,16 d'8. r4 |%m2
+  f,16 d'8. r4f,16 bes d8 cis16 aes eis8~ |%m3
+  eis1 |%m4 check note value carry over
+      \override NoteHead.style = #'cross
+  r2 \tuplet 3/1 {d'4 d d} f16 e d8 |%m4
+  r2 \tuplet 3/1 {d4 d d} a'16 f d8 |%m5
+  r2 d16 d d8 d16 d8. |%m6
+  d1 \glissando |%m7
+      \revert NoteHead.style
+  f,16 d'8. r4 f,16 d'8. r4 f,16 bes d8 |%m8
+  f,16 d'8. r4 f,16 d'8. r4 |%m9
+  f,16 d'8. r4 f,16 d'8. c16 a f8|%m10
+  f16 d8. f16 c gis8 f16 d'8. f16 cis g8 f16 bes c8 |%m11
+
+
 }
 
 contrabass = \relative c {
@@ -37,7 +51,7 @@ contrabass = \relative c {
       \time 5/4
   <d fis bes>16<d fis bes>8. c'16 aes e8 <d fis bes>16<d fis bes>8. c'16 aes e8 d16 fis ais8 |%m12
       \time 4/4
-  <d, fis bes>16<d fis bes>8. c'16 aes e8 <d fis bes>16<d fis bes>8. c'16 aes e8 |%m13 
+  <d, fis bes>16<d fis bes>8. c'16 aes e8 <d fis bes>16<d fis bes>8. c'16 aes e8 |%m13
   <d fis bes>16<d fis bes>8. c'16 aes e8 d16 fis ais8 a16 f des8 \clef treble |%m14
   \tuplet 3/2 {<dis' g>8<dis g>8<dis g>} <dis g>4 r2 |%m15
        \time 7/4
